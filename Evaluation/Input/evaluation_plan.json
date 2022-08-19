@@ -1,11 +1,11 @@
 {
-    "$schema": "https://github.com/Open-Systems-Pharmacology/QualificationPlan/releases/download/v3.0/OSP_Qualification_Plan_Schema.json",
+    "$schema": "https://github.com/Open-Systems-Pharmacology/QualificationPlan/releases/download/v2.1/OSP_Qualification_Plan_Schema.json",
     "Projects": [
         {
-            "Id": "Compound",
-            "Path": "../../Compound.json",
+            "Id": "Felodipine",
+            "Path": "../../Felodipine-Model.json",
             "BuildingBlocks": [],
-            "SimulationParameters": []
+            "SimulationParameters": [],
         }
     ],
     "ObservedDataSets": [],
@@ -15,14 +15,14 @@
                 {
                     "Type": "X",
                     "Dimension": "Concentration (mass)",
-                    "Unit": "µg/l",
+                    "Unit": "ng/ml",
                     "GridLines": false,
                     "Scaling": "Log"
                 },
                 {
                     "Type": "Y",
                     "Dimension": "Concentration (mass)",
-                    "Unit": "µg/l",
+                    "Unit": "ng/ml",
                     "GridLines": false,
                     "Scaling": "Log"
                 }
@@ -54,7 +54,7 @@
                 {
                     "Type": "Y",
                     "Dimension": "Concentration (mass)",
-                    "Unit": "µg/l",
+                    "Unit": "ng/ml",
                     "GridLines": false,
                     "Scaling": "Log"
                 }
@@ -121,53 +121,342 @@
         },
         "AllPlots": [
             {
-                "Project": "Compound",
-                "Simulation": "Sim 1 - intravenous",
-                "SectionReference": "ct-profiles"
+                "SectionId": 331,
+                "Project": "Felodipine",
+                "Simulation": "IV 1.5mg (60min)"
             },
             {
-                "Project": "Compound",
-                "Simulation": "Sim 2 - peroral",
-                "SectionReference": "ct-profiles"
+                "SectionId": 331,
+                "Project": "Felodipine",
+                "Simulation": "Oral solution"
+            },
+            {
+                "SectionId": 331,
+                "Project": "Felodipine",
+                "Simulation": "Oral solution MD"
+            },
+            {
+                "SectionId": 331,
+                "Project": "Felodipine",
+                "Simulation": "IR tablet 5mg"
+            },
+            {
+                "SectionId": 331,
+                "Project": "Felodipine",
+                "Simulation": "IR tablet 10mg"
+            },
+            {
+                "SectionId": 331,
+                "Project": "Felodipine",
+                "Simulation": "ER tablet 5mg"
+            },
+            {
+                "SectionId": 331,
+                "Project": "Felodipine",
+                "Simulation": "ER tablet 10mg"
+            },
+            {
+                "SectionId": 331,
+                "Project": "Felodipine",
+                "Simulation": "ER tablet OD 10mg"
+            },
+            {
+                "SectionId": 332,
+                "Project": "Felodipine",
+                "Simulation": "ER tablet 10mg_test"
+            },
+            {
+                "SectionId": 332,
+                "Project": "Felodipine",
+                "Simulation": "ER tablet 5mg_test"
+            },
+            {
+                "SectionId": 332,
+                "Project": "Felodipine",
+                "Simulation": "ER tablet OD 10mg_test"
+            },
+            {
+                "SectionId": 332,
+                "Project": "Felodipine",
+                "Simulation": "ER tablet OD 2.5/5mg_test"
+            },
+            {
+                "SectionId": 332,
+                "Project": "Felodipine",
+                "Simulation": "IR tablet BID 10mg_test"
+            },
+            {
+                "SectionId": 332,
+                "Project": "Felodipine",
+                "Simulation": "IR tablet OD 10mg_test"
+            },
+            {
+                "SectionId": 332,
+                "Project": "Felodipine",
+                "Simulation": "IR tablet TID 5mg_test"
             }
         ],
         "GOFMergedPlots": [
             {
-                "Title": "Goodness of fit plot for concentration in plasma",
-                "SectionReference": "diagnostics-plots",
+                "Title": "Felodipine concentration in plasma",
+                "SectionId": 32,
                 "Artifacts": [
                     "Plot",
                     "GMFE",
                     "Measure"
                 ],
-                "PlotTypes": [
-                    "predictedVsObserved",
-                    "residualsOverTime"
-                ],
+                "PlotType": "predictedVsObserved|residualsOverTime",
                 "Groups": [
                     {
-                        "Caption": "Intravenous administration",
-                        "Symbol": "Circle",
+                        "Caption": "Intravenous administration (model building)",
+                        "Symbol": "Triangle",
                         "OutputMappings": [
                             {
-                                "Project": "Compound",
-                                "Simulation": "Sim 1 - intravenous",
-                                "Output": "Organism|PeripheralVenousBlood|COMPOUND|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "Observed data iv",
-                                "Color": "#FF0000"
+                                "Project": "Felodipine",
+                                "Simulation": "IV 1.5mg (60min)",
+                                "Output": "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Lundahl 1997 - 1.5mg-IV infusion - Felodipine - IV - 1.5 mg - Plasma - agg. (n=12)",
+                                "Color": "#2166ac"
                             }
                         ]
                     },
                     {
-                        "Caption": "Oral administration",
+                        "Caption": "Oral administration, solution (model building)",
+                        "Symbol": "Circle",
+                        "OutputMappings": [
+                            {
+                                "Project": "Felodipine",
+                                "Simulation": "Oral solution",
+                                "Output": "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Edgar 1987 - 10mg-PO solution - Felodipine - PO - 10 mg - Plasma - agg. (n=12)",
+                                "Color": "#2166ac"
+                            },
+                            {
+                                "Project": "Felodipine",
+                                "Simulation": "Oral solution MD",
+                                "Output": "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Blychert 1990 - Study I-10mg-PO solution - Felodipine - PO - 10 mg - Plasma - agg. (n=18)",
+                                "Color": "#2166ac"
+                            },
+                            {
+                                "Project": "Felodipine",
+                                "Simulation": "Oral solution MD",
+                                "Output": "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Edgar 1987 - 10mg-PO solution - Felodipine - PO - 10 mg - Plasma - agg. (n=12)",
+                                "Color": "#2166ac"
+                            }
+                        ]
+                    },
+                    {
+                        "Caption": "Oral administration, ER tablet (model building)",
                         "Symbol": "Square",
                         "OutputMappings": [
                             {
-                                "Project": "Compound",
-                                "Simulation": "Sim 2 - peroral",
-                                "Output": "Organism|PeripheralVenousBlood|COMPOUND|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "Observed data po",
-                                "Color": "#FF0000"
+                                "Project": "Felodipine",
+                                "Simulation": "ER tablet 5mg",
+                                "Output": "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Goosen 2004 - 5mg-PO ER tablet - Felodipine - PO - 5 mg - Plasma - agg. (n=11)",
+                                "Color": "#2166ac"
+                            },
+                            {
+                                "Project": "Felodipine",
+                                "Simulation": "ER tablet 5mg",
+                                "Output": "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Jalava 1997 - 5mg-PO ER tablet - Felodipine - PO - 5 mg - Plasma - agg. (n=9)",
+                                "Color": "#2166ac"
+                            },
+                            {
+                                "Project": "Felodipine",
+                                "Simulation": "ER tablet 10mg",
+                                "Output": "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Edgar 1987 - 10mg-PO ER tablet - Felodipine - PO - 10 mg - Plasma - agg. (n=12)",
+                                "Color": "#2166ac"
+                            },
+                            {
+                                "Project": "Felodipine",
+                                "Simulation": "ER tablet 10mg",
+                                "Output": "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Bailey 1996 - 10mg-PO ER tablet - Felodipine - PO - 10 mg - Plasma - agg. (n=12)",
+                                "Color": "#2166ac"
+                            },
+                            {
+                                "Project": "Felodipine",
+                                "Simulation": "ER tablet 10mg",
+                                "Output": "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Gelal 2005 - 10mg-PO ER tablet - Felodipine - PO - 10 mg - Serum - agg. (n=10)",
+                                "Color": "#2166ac"
+                            },
+                            {
+                                "Project": "Felodipine",
+                                "Simulation": "ER tablet 10mg",
+                                "Output": "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Bailey 2003 - 10mg-PO ER tablet - Felodipine - PO - 10 mg - Plasma - agg. (n=8)",
+                                "Color": "#2166ac"
+                            },
+                            {
+                                "Project": "Felodipine",
+                                "Simulation": "ER tablet OD 10mg",
+                                "Output": "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Blychert 1990 - Study II-10mg-PO ER tablet-market - Felodipine - PO - 10 mg - Plasma - agg. (n=15)",
+                                "Color": "#2166ac"
+                            },
+                            {
+                                "Project": "Felodipine",
+                                "Simulation": "ER tablet OD 10mg",
+                                "Output": "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Lundahl 1998 - 10mg-PO ER tablet - Felodipine - PO - 10 mg - Plasma - agg. (n=12)",
+                                "Color": "#2166ac"
+                            },
+                            {
+                                "Project": "Felodipine",
+                                "Simulation": "ER tablet OD 10mg",
+                                "Output": "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Bailey 1995 - 10mg-PO ER tablet - Felodipine - PO - 10 mg - Plasma - agg. (n=12)",
+                                "Color": "#2166ac"
+                            },
+                            {
+                                "Project": "Felodipine",
+                                "Simulation": "ER tablet OD 10mg",
+                                "Output": "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Aberg 1997 - 10mg-PO ER tablet - Felodipine - PO - 10 mg - Plasma - agg. (n=36)",
+                                "Color": "#2166ac"
+                            }                            
+                        ]
+                    },
+                    {
+                        "Caption": "Oral administration, IR tablet (model building)",
+                        "Symbol": "Diamond",
+                        "OutputMappings": [
+                            {
+                                "Project": "Felodipine",
+                                "Simulation": "IR tablet 5mg",
+                                "Output": "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Bailey 1993 - 5mg-PO IR tablet - Felodipine - PO - 5 mg - Plasma - agg. (n=9)",
+                                "Color": "#2166ac"
+                            },
+                            {
+                                "Project": "Felodipine",
+                                "Simulation": "IR tablet 5mg",
+                                "Output": "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Edgar 1992 - 5mg-PO IR tablet - Felodipine - PO - 5 mg - Plasma - agg. (n=9)",
+                                "Color": "#2166ac"
+                            },
+                            {
+                                "Project": "Felodipine",
+                                "Simulation": "IR tablet 10mg",
+                                "Output": "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Edgar 1987 - 10mg-PO IR tablet - Felodipine - PO - 10 mg - Plasma - agg. (n=12)",
+                                "Color": "#2166ac"
+                            }                                                                                   
+                        ]
+                    },
+                    {
+                        "Caption": "Oral administration, ER tablet (model verification)",
+                        "Symbol": "Square",
+                        "OutputMappings": [
+                            {
+                                "Project": "Felodipine",
+                                "Simulation": "ER tablet 10mg_test",
+                                "Output": "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Dresser 2017 - 10mg-PO ER tablet - Felodipine - PO - 10 mg - Plasma - agg. (n=5)",
+                                "Color": "#b2182b"
+                            },
+                            {
+                                "Project": "Felodipine",
+                                "Simulation": "ER tablet 10mg_test",
+                                "Output": "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Dresser 2002 - 10mg-PO ER tablet - Felodipine - PO - 10 mg - Plasma - agg. (n=11)",
+                                "Color": "#b2182b"
+                            },
+                            {
+                                "Project": "Felodipine",
+                                "Simulation": "ER tablet 10mg_test",
+                                "Output": "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Bailey 2000 - 10mg-PO ER tablet - Felodipine - PO - 10 mg - Plasma - agg. (n=12)",
+                                "Color": "#b2182b"
+                            },
+                            {
+                                "Project": "Felodipine",
+                                "Simulation": "ER tablet 10mg_test",
+                                "Output": "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Bailey 1998 - 10mg-PO ER tablet - Felodipine - PO - 10 mg - Plasma - agg. (n=12)",
+                                "Color": "#b2182b"
+                            },
+                            {
+                                "Project": "Felodipine",
+                                "Simulation": "ER tablet 10mg_test",
+                                "Output": "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Lundahl 1997 - 10mg-PO ER tablet - Felodipine - PO - 10 mg - Plasma - agg. (n=12)",
+                                "Color": "#b2182b"
+                            },
+                            {
+                                "Project": "Felodipine",
+                                "Simulation": "ER tablet 10mg_test",
+                                "Output": "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Madsen 1996 - 10mg-PO ER tablet - Felodipine - PO - 10 mg - Plasma - agg. (n=12)",
+                                "Color": "#b2182b"
+                            },
+                            {
+                                "Project": "Felodipine",
+                                "Simulation": "ER tablet 5mg_test",
+                                "Output": "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Dresser 2000 - 5mg-PO ER tablet - Felodipine - PO - 5 mg - Plasma - agg. (n=12)",
+                                "Color": "#b2182b"
+                            },
+                            {
+                                "Project": "Felodipine",
+                                "Simulation": "ER tablet OD 10mg_test",
+                                "Output": "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Blychert 1990 - Study II-10mg-PO ER tablet-trial - Felodipine - PO - 10 mg - Plasma - agg. (n=15)",
+                                "Color": "#b2182b"
+                            },
+                            {
+                                "Project": "Felodipine",
+                                "Simulation": "ER tablet OD 2.5/5mg_test",
+                                "Output": "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Dresser 2000 - 2.5mg,5mg-PO ER tablet - Felodipine - PO - 2.5, 5 mg - Plasma - agg. (n=6)",
+                                "Color": "#b2182b"
+                            }
+                        ]
+                    },
+                    {
+                        "Caption": "Oral administration, IR tablet (model verification)",
+                        "Symbol": "Diamond",
+                        "OutputMappings": [
+                            {
+                                "Project": "Felodipine",
+                                "Simulation": "IR tablet BID 10mg_test",
+                                "Output": "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Smith 1987 - 10mg-PO IR tablet - Felodipine - PO - 10 mg - Plasma - agg. (n=8)",
+                                "Color": "#b2182b"
+                            },
+                            {
+                                "Project": "Felodipine",
+                                "Simulation": "IR tablet BID 10mg_test",
+                                "Output": "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Blychert 1990 - Study I-10mg-PO IR tablet-market - Felodipine - PO - 10 mg - Plasma - agg. (n=18)",
+                                "Color": "#b2182b"
+                            },
+                            {
+                                "Project": "Felodipine",
+                                "Simulation": "IR tablet BID 10mg_test",
+                                "Output": "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Blychert 1990 - Study I-10mg-PO IR tablet-trial - Felodipine - PO - 10 mg - Plasma - agg. (n=18)",
+                                "Color": "#b2182b"
+                            },
+                            {
+                                "Project": "Felodipine",
+                                "Simulation": "IR tablet OD 10mg_test",
+                                "Output": "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Blychert 1990 - Study II-10mg-PO ER tablet-market - Felodipine - PO - 10 mg - Plasma - agg. (n=15)",
+                                "Color": "#b2182b"
+                            },
+                            {
+                                "Project": "Felodipine",
+                                "Simulation": "IR tablet TID 5mg_test",
+                                "Output": "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Bratel 1989 - 5mg-PO IR tablet - Felodipine - PO - 5 mg - Plasma - agg. (n=11)",
+                                "Color": "#b2182b"
                             }
                         ]
                     }
@@ -180,75 +469,94 @@
     },
     "Inputs": [
         {
-            "Project": "Compound",
-            "Name": "COMPOUND",
+            "Project": "Felodipine",
+            "Name": "Felodipine",
             "Type": "Compound",
-            "SectionReference": "final-input-parameters"
+            "SectionId": 31
         },
         {
-            "Project": "Compound",
-            "Name": "Tablet",
+            "Project": "Felodipine",
+            "Name": "Felodipine_IR tablet",
             "Type": "Formulation",
-            "SectionReference": "final-input-parameters"
+            "SectionId": 31
+        },
+        {
+            "Project": "Felodipine",
+            "Name": "Felodipine_ER tablet",
+            "Type": "Formulation",
+            "SectionId": 31
         }
     ],
     "Sections": [
         {
-            "Reference": "introduction",
-            "Title": "Introduction",
+            "Id": 1,
+            "Title": "1 Introduction",
             "Content": "Content/Section1_Introduction.md"
         },
         {
-            "Reference": "methods",
-            "Title": "Methods",
+            "Id": 2,
+            "Title": "2 Methods",
+            "Content": "Content/Section2_Methods.md",
             "Sections": [
                 {
-                    "Reference": "modeling-strategy",
-                    "Title": "Modeling Strategy",
+                    "Id": 21,
+                    "Title": "2.1 Modeling Strategy",
                     "Content": "Content/Section2.1_Modeling_Strategy.md"
                 },
                 {
-                    "Reference": "methods-data",
-                    "Title": "Data",
+                    "Id": 22,
+                    "Title": "2.2 Data",
                     "Content": "Content/Section2.2_Data.md"
                 },
                 {
-                    "Reference": "model-parameters-and-assumptions",
-                    "Title": "Model Parameters and Assumptions",
+                    "Id": 23,
+                    "Title": "2.3 Model Parameters and Assumptions",
                     "Content": "Content/Section2.3_Model_Parameters_and_Assumptions.md"
                 }
             ]
         },
         {
-            "Reference": "results-and-discussion",
-            "Title": "Results and Discussion",
+            "Id": 3,
+            "Title": "3 Results and Discussion",
             "Content": "Content/Section3_Results_and_Discussion.md",
             "Sections": [
                 {
-                    "Reference": "final-input-parameters",
-                    "Title": "Final input parameters",
+                    "Id": 31,
+                    "Title": "3.1 Final input parameters",
                     "Content": "Content/Input_table.md"
                 },
                 {
-                    "Reference": "diagnostics-plots",
-                    "Title": "Diagnostics Plots",
+                    "Id": 32,
+                    "Title": "3.2 Diagnostics Plots",
                     "Content": "Content/GOF_diagnostics.md"
                 },
                 {
-                    "Reference": "ct-profiles",
-                    "Title": "Concentration-Time Profiles",
-                    "Content": "Content/Concentration_time_profiles.md"
+                    "Id": 33,
+                    "Title": "3.3 Concentration-Time Profiles",
+                    "Content": "Content/Concentration_time_profiles.md",
+                    "Sections": [
+                        {
+                            "Id": 331,
+                            "Title": "3.3.1 Model Building",
+                            "Content": "Content/Concentration_time_profiles_building.md"
+                        },
+                        {
+                            "Id": 332,
+                            "Title": "3.3.2 Model Verification",
+                            "Content": "Content/Concentration_time_profiles_verification.md"
+                        }
+                    ]
                 }
             ]
         },
         {
-            "Reference": "conclusion",
-            "Title": "Conclusion",
-            "Content": "Content/Conclusion.md"
+            "Id": 4,
+            "Title": "4 Conclusion",
+            "Content": "Content/Section4_Conclusion.md"
         },
         {
-            "Reference": "main-references",
-            "Title": "References",
+            "Id": 5,
+            "Title": "5 References",
             "Content": "Content/References.md"
         }
     ],
