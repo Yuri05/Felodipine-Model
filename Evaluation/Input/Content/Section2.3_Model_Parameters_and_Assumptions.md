@@ -19,7 +19,7 @@ After testing the available organ-plasma partition coefficient and cell permeabi
 Two metabolic pathways were implement into the model via Michaelis-Menten kinetics 
 
 * CYP3A4
-* unknown hepatic enzyme *via* unspecific hepatic clearnace
+* unknown hepatic enzyme *via* unspecific hepatic clearance
 
 The latter was preferred over renal clearance, since there is evidence that felodipine is fully metabolized and not found in urine ([Edgar 1987](#5-references)).
 CYP3A5 was not implemented since the fraction metabolized appeared to be minor compared to CYP3A4.
