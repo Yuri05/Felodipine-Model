@@ -1,7 +1,8 @@
 # Felodipine-Model
 Whole-body PBPK model of felodipine.
 
-<a title="Felodipine" href="/wiki/File:Felodipine_structure.svg"><img width="220" alt="Felodipine structure.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/46/Felodipine_structure.svg/220px-Felodipine_structure.svg.png"></a>
+<a title="Felodipine" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Felodipine_structure.svg/220px-Felodipine_structure.svg.png"><img width="128" alt="Felodipine 200" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Felodipine_structure.svg/220px-Felodipine_structure.svg.png"></a>
+
 
 
 This repository contains:
