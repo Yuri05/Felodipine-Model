@@ -5,15 +5,15 @@
 close all
 tic
 
-if exist(fullfile(cd,'re_input'),'dir')>0 rmdir(fullfile(cd,'re_input'),'s'); end
-if exist(fullfile(cd,'re_output'),'dir')>0 rmdir(fullfile(cd,'re_output'),'s'); end
-if exist(fullfile(cd,'report'),'dir')>0 rmdir(fullfile(cd,'report'),'s'); end
+% if exist(fullfile(cd,'re_input'),'dir')>0 rmdir(fullfile(cd,'re_input'),'s'); end
+% if exist(fullfile(cd,'re_output'),'dir')>0 rmdir(fullfile(cd,'re_output'),'s'); end
+% if exist(fullfile(cd,'report'),'dir')>0 rmdir(fullfile(cd,'report'),'s'); end
 
 % --------------------------------------------------------------
 % replace qualificationRunnerFolder and markdownJoinerFolder with your paths
-qualificationRunnerFolder = 'C:\Software\QualificationRunner_11.0.138';
-markdownJoinerFolder = 'C:\Software\markdown-joiner_1.2.0.8';
-PKSimPortableFolder = 'C:\Software\PK-Sim_11.0.150';
+qualificationRunnerFolder = 'C:\CompletSetup_SBSuite\QualificationFramework\Version_3.0_beta\QualificationRunner_11.0.138';
+markdownJoinerFolder = 'C:\CompletSetup_SBSuite\QualificationFramework\Version_2.3\markdown-joiner_1.2.0.8';
+
 
 % --------------------------------------------------------------
 % replace baseDir and qualificationPlanName with your paths
@@ -47,7 +47,7 @@ ReportOutput_path=fullfile(baseDir,'report');
 
 % --------------------------------------------------------------
 % STEP #1: start qualification runner to generate inputs for the reporting engine
-startQualificationRunner(qualificationRunnerFolder, qualificationPlan, REInput_path, ['-p ' PKSimPortableFolder]);
+startQualificationRunner(qualificationRunnerFolder, qualificationPlan, REInput_path);
 
 % --------------------------------------------------------------
 % STEP #2: start reporting engine
