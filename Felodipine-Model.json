@@ -10705,8 +10705,8 @@
           "Name": "Dissolution shape",
           "Scaling": "Log",
           "LinkedParameters": [
-            "IR tablet 10mg|Applications|PO SD 10mg|IR tablet|Dissolution shape",
-            "IR tablet 5mg|Applications|PO SD 5mg|IR tablet|Dissolution shape"
+            "IR tablet 10mg|Applications|PO SD 10mg|Felodipine_IR tablet|Dissolution shape",
+            "IR tablet 5mg|Applications|PO SD 5mg|Felodipine_IR tablet|Dissolution shape"
           ],
           "Parameters": [
             {
@@ -10727,8 +10727,8 @@
           "Name": "Dissolution time (50% dissolved)",
           "Scaling": "Log",
           "LinkedParameters": [
-            "IR tablet 10mg|Applications|PO SD 10mg|IR tablet|Dissolution time (50% dissolved)",
-            "IR tablet 5mg|Applications|PO SD 5mg|IR tablet|Dissolution time (50% dissolved)"
+            "IR tablet 10mg|Applications|PO SD 10mg|Felodipine_IR tablet|Dissolution time (50% dissolved)",
+            "IR tablet 5mg|Applications|PO SD 5mg|Felodipine_IR tablet|Dissolution time (50% dissolved)"
           ],
           "Parameters": [
             {
@@ -11425,14 +11425,14 @@
           "Name": "Specific clearance",
           "Scaling": "Log",
           "LinkedParameters": [
-            "ER tablet 10mg|Felodipine-Total Hepatic Clearance-prostaglandin_synthase|Specific clearance",
-            "ER tablet 5mg|Felodipine-Total Hepatic Clearance-prostaglandin_synthase|Specific clearance",
-            "ER tablet OD 10mg|Felodipine-Total Hepatic Clearance-prostaglandin_synthase|Specific clearance",
-            "IV 1.5mg (60min)|Felodipine-Total Hepatic Clearance-prostaglandin_synthase|Specific clearance",
-            "Jalava_control|Felodipine-Total Hepatic Clearance-prostaglandin_synthase|Specific clearance",
-            "Jalava_Treatment|Felodipine-Total Hepatic Clearance-prostaglandin_synthase|Specific clearance",
-            "Oral solution|Felodipine-Total Hepatic Clearance-prostaglandin_synthase|Specific clearance",
-            "Oral solution MD|Felodipine-Total Hepatic Clearance-prostaglandin_synthase|Specific clearance"
+            "ER tablet 10mg|Felodipine-Total Hepatic Clearance-Unspecific hepatic clearance|Specific clearance",
+            "ER tablet 5mg|Felodipine-Total Hepatic Clearance-Unspecific hepatic clearance|Specific clearance",
+            "ER tablet OD 10mg|Felodipine-Total Hepatic Clearance-Unspecific hepatic clearance|Specific clearance",
+            "IV 1.5mg (60min)|Felodipine-Total Hepatic Clearance-Unspecific hepatic clearance|Specific clearance",
+            "Jalava_control|Felodipine-Total Hepatic Clearance-Unspecific hepatic clearance|Specific clearance",
+            "Jalava_Treatment|Felodipine-Total Hepatic Clearance-Unspecific hepatic clearance|Specific clearance",
+            "Oral solution|Felodipine-Total Hepatic Clearance-Unspecific hepatic clearance|Specific clearance",
+            "Oral solution MD|Felodipine-Total Hepatic Clearance-Unspecific hepatic clearance|Specific clearance"
           ],
           "Parameters": [
             {
