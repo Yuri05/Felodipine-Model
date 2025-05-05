@@ -1,5 +1,5 @@
 {
-  "Version": 79,
+  "Version": 80,
   "ExpressionProfiles": [
     {
       "Type": "Enzyme",
@@ -2270,17 +2270,17 @@
           "Unit": "mg"
         },
         {
+          "Name": "Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
           "Name": "End time",
           "Value": 144.0,
           "Unit": "h",
           "ValueOrigin": {
             "Source": "Unknown"
           }
-        },
-        {
-          "Name": "Volume of water/body weight",
-          "Value": 3.5,
-          "Unit": "ml/kg"
         }
       ]
     },
@@ -2300,17 +2300,17 @@
           "Unit": "mg"
         },
         {
+          "Name": "Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
           "Name": "End time",
           "Value": 144.0,
           "Unit": "h",
           "ValueOrigin": {
             "Source": "Unknown"
           }
-        },
-        {
-          "Name": "Volume of water/body weight",
-          "Value": 3.5,
-          "Unit": "ml/kg"
         }
       ]
     },
@@ -2330,17 +2330,17 @@
           "Unit": "mg"
         },
         {
+          "Name": "Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
           "Name": "End time",
           "Value": 120.0,
           "Unit": "h",
           "ValueOrigin": {
             "Source": "Unknown"
           }
-        },
-        {
-          "Name": "Volume of water/body weight",
-          "Value": 3.5,
-          "Unit": "ml/kg"
         }
       ]
     },
@@ -2360,17 +2360,17 @@
           "Unit": "mg"
         },
         {
+          "Name": "Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
           "Name": "End time",
           "Value": 336.0,
           "Unit": "h",
           "ValueOrigin": {
             "Source": "Unknown"
           }
-        },
-        {
-          "Name": "Volume of water/body weight",
-          "Value": 3.5,
-          "Unit": "ml/kg"
         }
       ]
     },
@@ -2390,17 +2390,17 @@
           "Unit": "mg"
         },
         {
+          "Name": "Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
           "Name": "End time",
           "Value": 48.0,
           "Unit": "h",
           "ValueOrigin": {
             "Source": "Unknown"
           }
-        },
-        {
-          "Name": "Volume of water/body weight",
-          "Value": 3.5,
-          "Unit": "ml/kg"
         }
       ]
     },
@@ -2420,17 +2420,17 @@
           "Unit": "mg"
         },
         {
+          "Name": "Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
           "Name": "End time",
           "Value": 168.0,
           "Unit": "h",
           "ValueOrigin": {
             "Source": "Unknown"
           }
-        },
-        {
-          "Name": "Volume of water/body weight",
-          "Value": 3.5,
-          "Unit": "ml/kg"
         }
       ]
     },
@@ -2543,17 +2543,17 @@
           "Unit": "mg"
         },
         {
+          "Name": "Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        },
+        {
           "Name": "End time",
           "Value": 120.0,
           "Unit": "h",
           "ValueOrigin": {
             "Source": "Unknown"
           }
-        },
-        {
-          "Name": "Volume of water/body weight",
-          "Value": 3.5,
-          "Unit": "ml/kg"
         }
       ]
     },
@@ -2714,12 +2714,12 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|PO SD 10mg|Felodipine_ER tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO SD 10mg|Felodipine_ER tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO SD 10mg|Felodipine_ER tablet|Application_1|Tablet time delay factor",
+          "Path": "Events|PO SD 10mg|Felodipine_ER tablet|Application_1|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "ParameterIdentification",
@@ -2969,6 +2969,28 @@
         "Organism|Lumen|Felodipine|Fraction of oral drug mass absorbed into mucosa",
         "Organism|Felodipine-CYP3A4-Walsky 2004 Metabolite|Total fraction of dose-Felodipine"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "ER tablet 10mg|Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Bailey 1996 - 10mg-PO ER tablet - Felodipine - PO - 10 mg - Plasma - agg. (n=12)"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "ER tablet 10mg|Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Bailey 2003 - 10mg-PO ER tablet - Felodipine - PO - 10 mg - Plasma - agg. (n=8)"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "ER tablet 10mg|Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Edgar 1987 - 10mg-PO ER tablet - Felodipine - PO - 10 mg - Plasma - agg. (n=12)"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "ER tablet 10mg|Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Gelal 2005 - 10mg-PO ER tablet - Felodipine - PO - 10 mg - Serum - agg. (n=10)"
+        }
+      ],
       "Individual": "European (P-gp modified, CYP3A4 36 h)",
       "Compounds": [
         {
@@ -3161,12 +3183,12 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|PO SD 5mg|Felodipine_ER tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO SD 5mg|Felodipine_ER tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO SD 5mg|Felodipine_ER tablet|Application_1|Tablet time delay factor",
+          "Path": "Events|PO SD 5mg|Felodipine_ER tablet|Application_1|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "ParameterIdentification",
@@ -3415,6 +3437,18 @@
         "Organism|Lumen|Felodipine|Fraction dissolved",
         "Organism|Lumen|Felodipine|Fraction of oral drug mass absorbed into mucosa"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "ER tablet 5mg|Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Goosen 2004 - 5mg-PO ER tablet - Felodipine - PO - 5 mg - Plasma - agg. (n=11)"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "ER tablet 5mg|Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Jalava 1997 - 5mg-PO ER tablet - Felodipine - PO - 5 mg - Plasma - agg. (n=9)"
+        }
+      ],
       "Individual": "European (P-gp modified, CYP3A4 36 h)",
       "Compounds": [
         {
@@ -3591,12 +3625,12 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_1|Tablet time delay factor",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_1|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "ParameterIdentification",
@@ -3605,12 +3639,12 @@
           }
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_10|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_10|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_10|Tablet time delay factor",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_10|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "ParameterIdentification",
@@ -3619,12 +3653,12 @@
           }
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_11|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_11|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_11|Tablet time delay factor",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_11|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "ParameterIdentification",
@@ -3633,12 +3667,12 @@
           }
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_12|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_12|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_12|Tablet time delay factor",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_12|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "ParameterIdentification",
@@ -3647,12 +3681,12 @@
           }
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_13|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_13|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_13|Tablet time delay factor",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_13|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "ParameterIdentification",
@@ -3661,12 +3695,12 @@
           }
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_14|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_14|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_14|Tablet time delay factor",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_14|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "ParameterIdentification",
@@ -3675,12 +3709,12 @@
           }
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_2|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_2|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_2|Tablet time delay factor",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_2|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "ParameterIdentification",
@@ -3689,12 +3723,12 @@
           }
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_3|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_3|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_3|Tablet time delay factor",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_3|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "ParameterIdentification",
@@ -3703,12 +3737,12 @@
           }
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_4|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_4|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_4|Tablet time delay factor",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_4|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "ParameterIdentification",
@@ -3717,12 +3751,12 @@
           }
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_5|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_5|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_5|Tablet time delay factor",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_5|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "ParameterIdentification",
@@ -3731,12 +3765,12 @@
           }
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_6|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_6|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_6|Tablet time delay factor",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_6|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "ParameterIdentification",
@@ -3745,12 +3779,12 @@
           }
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_7|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_7|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_7|Tablet time delay factor",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_7|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "ParameterIdentification",
@@ -3759,12 +3793,12 @@
           }
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_8|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_8|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_8|Tablet time delay factor",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_8|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "ParameterIdentification",
@@ -3773,12 +3807,12 @@
           }
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_9|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_9|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_9|Tablet time delay factor",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_9|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "ParameterIdentification",
@@ -4024,6 +4058,28 @@
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "ER tablet OD 10mg|Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Aberg 1997 - 10mg-PO ER tablet - Felodipine - PO - 10 mg - Plasma - agg. (n=36)"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "ER tablet OD 10mg|Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Bailey 1995 - 10mg-PO ER tablet - Felodipine - PO - 10 mg - Plasma - agg. (n=12)"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "ER tablet OD 10mg|Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Blychert 1990 - Study II-10mg-PO ER tablet-market - Felodipine - PO - 10 mg - Plasma - agg. (n=15)"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "ER tablet OD 10mg|Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Lundahl 1998 - 10mg-PO ER tablet - Felodipine - PO - 10 mg - Plasma - agg. (n=12)"
+        }
       ],
       "Individual": "European (P-gp modified, CYP3A4 36 h)",
       "Compounds": [
@@ -4217,7 +4273,7 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|PO SD 10mg|Felodipine_IR tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO SD 10mg|Felodipine_IR tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -4459,6 +4515,13 @@
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "IR tablet 10mg|Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Edgar 1987 - 10mg-PO IR tablet - Felodipine - PO - 10 mg - Plasma - agg. (n=12)"
+        }
       ],
       "Individual": "European (P-gp modified, CYP3A4 36 h)",
       "Compounds": [
@@ -4620,7 +4683,7 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|PO SD 5mg|Felodipine_IR tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO SD 5mg|Felodipine_IR tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -4862,6 +4925,18 @@
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "IR tablet 5mg|Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Bailey 1993 - 5mg-PO IR tablet - Felodipine - PO - 5 mg - Plasma - agg. (n=9)"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "IR tablet 5mg|Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Edgar 1992 - 5mg-PO IR tablet - Felodipine - PO - 5 mg - Plasma - agg. (n=9)"
+        }
       ],
       "Individual": "European (P-gp modified, CYP3A4 36 h)",
       "Compounds": [
@@ -5033,7 +5108,7 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|IV 1.5mg (60min)|Application_1|ProtocolSchemaItem|Infusion time",
+          "Path": "Events|IV 1.5mg (60min)|Application_1|ProtocolSchemaItem|Infusion time",
           "Value": 60.0,
           "Unit": "min"
         },
@@ -5276,6 +5351,13 @@
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "IV 1.5mg (60min)|Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Lundahl 1997 - 1.5mg-IV infusion - Felodipine - IV - 1.5 mg - Plasma - agg. (n=12)"
+        }
+      ],
       "Individual": "European (P-gp modified, CYP3A4 36 h)",
       "Compounds": [
         {
@@ -5425,12 +5507,12 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|PO SD 5mg|Felodipine_ER tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO SD 5mg|Felodipine_ER tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO SD 5mg|Felodipine_ER tablet|Application_1|Tablet time delay factor",
+          "Path": "Events|PO SD 5mg|Felodipine_ER tablet|Application_1|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "ParameterIdentification",
@@ -5677,6 +5759,13 @@
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "Jalava_control|Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Jalava 1997 - 5mg-PO ER tablet - Felodipine - PO - 5 mg - Plasma - agg. (n=9)"
+        }
+      ],
       "Individual": "European (P-gp modified, CYP3A4 36 h)",
       "Compounds": [
         {
@@ -5836,12 +5925,12 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|Jalava_Treatment_Felodipine|Felodipine_ER tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|Jalava_Treatment_Felodipine|Felodipine_ER tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|Jalava_Treatment_Felodipine|Felodipine_ER tablet|Application_1|Tablet time delay factor",
+          "Path": "Events|Jalava_Treatment_Felodipine|Felodipine_ER tablet|Application_1|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "ParameterIdentification",
@@ -5850,22 +5939,22 @@
           }
         },
         {
-          "Path": "Applications|Jalava_Treatment_Itraconazole|Solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|Jalava_Treatment_Itraconazole|Solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|Jalava_Treatment_Itraconazole|Solution|Application_2|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|Jalava_Treatment_Itraconazole|Solution|Application_2|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|Jalava_Treatment_Itraconazole|Solution|Application_3|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|Jalava_Treatment_Itraconazole|Solution|Application_3|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|Jalava_Treatment_Itraconazole|Solution|Application_4|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|Jalava_Treatment_Itraconazole|Solution|Application_4|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -6111,6 +6200,18 @@
         "Organism|PeripheralVenousBlood|Itraconazole|Plasma (Peripheral Venous Blood)",
         "Organism|PeripheralVenousBlood|Keto-Itraconazole|Plasma (Peripheral Venous Blood)",
         "Organism|PeripheralVenousBlood|N-desalkyl-Itraconazole|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "Jalava_Treatment|Organism|PeripheralVenousBlood|Itraconazole|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Jalava 1997 - 200mg-PO-DDI - Itraconazole - PO - 200 mg - Plasma - agg. (n=9)"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "Jalava_Treatment|Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Jalava 1997 - Itraconazole DDI, treatment group - Felodipine - PO - 5 mg - Plasma - agg. (n=9)"
+        }
       ],
       "Individual": "European (P-gp modified, CYP3A4 36 h)",
       "Compounds": [
@@ -6425,7 +6526,7 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|PO SD 10mg|Felodipine_Oral solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO SD 10mg|Felodipine_Oral solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -6667,6 +6768,13 @@
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "Oral solution|Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Edgar 1987 - 10mg-PO solution - Felodipine - PO - 10 mg - Plasma - agg. (n=12)"
+        }
       ],
       "Individual": "European (P-gp modified, CYP3A4 36 h)",
       "Compounds": [
@@ -6827,62 +6935,62 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|PO BID6 10mg|Felodipine_Oral solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO BID6 10mg|Felodipine_Oral solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO BID6 10mg|Felodipine_Oral solution|Application_10|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO BID6 10mg|Felodipine_Oral solution|Application_10|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO BID6 10mg|Felodipine_Oral solution|Application_11|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO BID6 10mg|Felodipine_Oral solution|Application_11|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO BID6 10mg|Felodipine_Oral solution|Application_12|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO BID6 10mg|Felodipine_Oral solution|Application_12|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO BID6 10mg|Felodipine_Oral solution|Application_2|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO BID6 10mg|Felodipine_Oral solution|Application_2|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO BID6 10mg|Felodipine_Oral solution|Application_3|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO BID6 10mg|Felodipine_Oral solution|Application_3|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO BID6 10mg|Felodipine_Oral solution|Application_4|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO BID6 10mg|Felodipine_Oral solution|Application_4|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO BID6 10mg|Felodipine_Oral solution|Application_5|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO BID6 10mg|Felodipine_Oral solution|Application_5|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO BID6 10mg|Felodipine_Oral solution|Application_6|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO BID6 10mg|Felodipine_Oral solution|Application_6|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO BID6 10mg|Felodipine_Oral solution|Application_7|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO BID6 10mg|Felodipine_Oral solution|Application_7|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO BID6 10mg|Felodipine_Oral solution|Application_8|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO BID6 10mg|Felodipine_Oral solution|Application_8|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO BID6 10mg|Felodipine_Oral solution|Application_9|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO BID6 10mg|Felodipine_Oral solution|Application_9|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -7124,6 +7232,18 @@
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "Oral solution MD|Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Blychert 1990 - Study I-10mg-PO solution - Felodipine - PO - 10 mg - Plasma - agg. (n=18)"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "Oral solution MD|Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Edgar 1987 - 10mg-PO solution - Felodipine - PO - 10 mg - Plasma - agg. (n=12)"
+        }
       ],
       "Individual": "European (P-gp modified, CYP3A4 36 h)",
       "Compounds": [
@@ -7299,12 +7419,12 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|PO SD 10mg|Felodipine_ER tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO SD 10mg|Felodipine_ER tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO SD 10mg|Felodipine_ER tablet|Application_1|Tablet time delay factor",
+          "Path": "Events|PO SD 10mg|Felodipine_ER tablet|Application_1|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "ParameterIdentification",
@@ -7554,6 +7674,38 @@
         "Organism|Lumen|Felodipine|Fraction of oral drug mass absorbed into mucosa",
         "Organism|Felodipine-CYP3A4-Walsky 2004 Metabolite|Total fraction of dose-Felodipine"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "ER tablet 10mg_test|Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Bailey 1998 - 10mg-PO ER tablet - Felodipine - PO - 10 mg - Plasma - agg. (n=12)"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "ER tablet 10mg_test|Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Bailey 2000 - 10mg-PO ER tablet - Felodipine - PO - 10 mg - Plasma - agg. (n=12)"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "ER tablet 10mg_test|Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Dresser 2002 - 10mg-PO ER tablet - Felodipine - PO - 10 mg - Plasma - agg. (n=11)"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "ER tablet 10mg_test|Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Dresser 2017 - 10mg-PO ER tablet - Felodipine - PO - 10 mg - Plasma - agg. (n=5)"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "ER tablet 10mg_test|Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Lundahl 1997 - 10mg-PO ER tablet - Felodipine - PO - 10 mg - Plasma - agg. (n=12)"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "ER tablet 10mg_test|Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Madsen 1996 - 10mg-PO ER tablet - Felodipine - PO - 10 mg - Plasma - agg. (n=12)"
+        }
+      ],
       "Individual": "European (P-gp modified, CYP3A4 36 h)",
       "Compounds": [
         {
@@ -7767,12 +7919,12 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|PO SD 5mg|Felodipine_ER tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO SD 5mg|Felodipine_ER tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO SD 5mg|Felodipine_ER tablet|Application_1|Tablet time delay factor",
+          "Path": "Events|PO SD 5mg|Felodipine_ER tablet|Application_1|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "ParameterIdentification",
@@ -8020,6 +8172,13 @@
         "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
         "Organism|Lumen|Felodipine|Fraction dissolved",
         "Organism|Lumen|Felodipine|Fraction of oral drug mass absorbed into mucosa"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "ER tablet 5mg_test|Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Dresser 2000 - 5mg-PO ER tablet - Felodipine - PO - 5 mg - Plasma - agg. (n=12)"
+        }
       ],
       "Individual": "European (P-gp modified, CYP3A4 36 h)",
       "Compounds": [
@@ -8183,12 +8342,12 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_1|Tablet time delay factor",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_1|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "ParameterIdentification",
@@ -8197,12 +8356,12 @@
           }
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_10|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_10|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_10|Tablet time delay factor",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_10|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "ParameterIdentification",
@@ -8211,12 +8370,12 @@
           }
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_11|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_11|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_11|Tablet time delay factor",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_11|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "ParameterIdentification",
@@ -8225,12 +8384,12 @@
           }
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_12|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_12|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_12|Tablet time delay factor",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_12|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "ParameterIdentification",
@@ -8239,12 +8398,12 @@
           }
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_13|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_13|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_13|Tablet time delay factor",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_13|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "ParameterIdentification",
@@ -8253,12 +8412,12 @@
           }
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_14|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_14|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_14|Tablet time delay factor",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_14|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "ParameterIdentification",
@@ -8267,12 +8426,12 @@
           }
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_2|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_2|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_2|Tablet time delay factor",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_2|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "ParameterIdentification",
@@ -8281,12 +8440,12 @@
           }
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_3|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_3|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_3|Tablet time delay factor",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_3|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "ParameterIdentification",
@@ -8295,12 +8454,12 @@
           }
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_4|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_4|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_4|Tablet time delay factor",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_4|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "ParameterIdentification",
@@ -8309,12 +8468,12 @@
           }
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_5|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_5|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_5|Tablet time delay factor",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_5|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "ParameterIdentification",
@@ -8323,12 +8482,12 @@
           }
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_6|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_6|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_6|Tablet time delay factor",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_6|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "ParameterIdentification",
@@ -8337,12 +8496,12 @@
           }
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_7|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_7|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_7|Tablet time delay factor",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_7|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "ParameterIdentification",
@@ -8351,12 +8510,12 @@
           }
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_8|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_8|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_8|Tablet time delay factor",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_8|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "ParameterIdentification",
@@ -8365,12 +8524,12 @@
           }
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_9|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_9|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_ER tablet|Application_9|Tablet time delay factor",
+          "Path": "Events|PO OD14 10mg|Felodipine_ER tablet|Application_9|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "ParameterIdentification",
@@ -8617,6 +8776,13 @@
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "ER tablet OD 10mg_test|Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Blychert 1990 - Study II-10mg-PO ER tablet-trial - Felodipine - PO - 10 mg - Plasma - agg. (n=15)"
+        }
+      ],
       "Individual": "European (P-gp modified, CYP3A4 36 h)",
       "Compounds": [
         {
@@ -8779,96 +8945,96 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|PO OD2 2.5mg, OD6 5mg|Felodipine_ER tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD2 2.5mg, OD6 5mg|Felodipine_ER tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD2 2.5mg, OD6 5mg|Felodipine_ER tablet|Application_1|Tablet time delay factor",
+          "Path": "Events|PO OD2 2.5mg, OD6 5mg|Felodipine_ER tablet|Application_1|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "Unknown"
           }
         },
         {
-          "Path": "Applications|PO OD2 2.5mg, OD6 5mg|Felodipine_ER tablet|Application_2|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD2 2.5mg, OD6 5mg|Felodipine_ER tablet|Application_2|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD2 2.5mg, OD6 5mg|Felodipine_ER tablet|Application_2|Tablet time delay factor",
+          "Path": "Events|PO OD2 2.5mg, OD6 5mg|Felodipine_ER tablet|Application_2|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "Unknown"
           }
         },
         {
-          "Path": "Applications|PO OD2 2.5mg, OD6 5mg|Felodipine_ER tablet|Application_3|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD2 2.5mg, OD6 5mg|Felodipine_ER tablet|Application_3|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD2 2.5mg, OD6 5mg|Felodipine_ER tablet|Application_3|Tablet time delay factor",
+          "Path": "Events|PO OD2 2.5mg, OD6 5mg|Felodipine_ER tablet|Application_3|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "Unknown"
           }
         },
         {
-          "Path": "Applications|PO OD2 2.5mg, OD6 5mg|Felodipine_ER tablet|Application_4|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD2 2.5mg, OD6 5mg|Felodipine_ER tablet|Application_4|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD2 2.5mg, OD6 5mg|Felodipine_ER tablet|Application_4|Tablet time delay factor",
+          "Path": "Events|PO OD2 2.5mg, OD6 5mg|Felodipine_ER tablet|Application_4|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "Unknown"
           }
         },
         {
-          "Path": "Applications|PO OD2 2.5mg, OD6 5mg|Felodipine_ER tablet|Application_5|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD2 2.5mg, OD6 5mg|Felodipine_ER tablet|Application_5|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD2 2.5mg, OD6 5mg|Felodipine_ER tablet|Application_5|Tablet time delay factor",
+          "Path": "Events|PO OD2 2.5mg, OD6 5mg|Felodipine_ER tablet|Application_5|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "Unknown"
           }
         },
         {
-          "Path": "Applications|PO OD2 2.5mg, OD6 5mg|Felodipine_ER tablet|Application_6|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD2 2.5mg, OD6 5mg|Felodipine_ER tablet|Application_6|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD2 2.5mg, OD6 5mg|Felodipine_ER tablet|Application_6|Tablet time delay factor",
+          "Path": "Events|PO OD2 2.5mg, OD6 5mg|Felodipine_ER tablet|Application_6|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "Unknown"
           }
         },
         {
-          "Path": "Applications|PO OD2 2.5mg, OD6 5mg|Felodipine_ER tablet|Application_7|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD2 2.5mg, OD6 5mg|Felodipine_ER tablet|Application_7|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD2 2.5mg, OD6 5mg|Felodipine_ER tablet|Application_7|Tablet time delay factor",
+          "Path": "Events|PO OD2 2.5mg, OD6 5mg|Felodipine_ER tablet|Application_7|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "Unknown"
           }
         },
         {
-          "Path": "Applications|PO OD2 2.5mg, OD6 5mg|Felodipine_ER tablet|Application_8|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD2 2.5mg, OD6 5mg|Felodipine_ER tablet|Application_8|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD2 2.5mg, OD6 5mg|Felodipine_ER tablet|Application_8|Tablet time delay factor",
+          "Path": "Events|PO OD2 2.5mg, OD6 5mg|Felodipine_ER tablet|Application_8|Tablet time delay factor",
           "Value": 0.0695415108,
           "ValueOrigin": {
             "Source": "Unknown"
@@ -9115,6 +9281,13 @@
         "Organism|Lumen|Felodipine|Fraction dissolved",
         "Organism|Lumen|Felodipine|Fraction of oral drug mass absorbed into mucosa"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "ER tablet OD 2.5/5mg_test|Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Dresser 2000 - 2.5mg,5mg-PO ER tablet - Felodipine - PO - 2.5, 5 mg - Plasma - agg. (n=6)"
+        }
+      ],
       "Individual": "European (P-gp modified, CYP3A4 36 h)",
       "Compounds": [
         {
@@ -9275,62 +9448,62 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|PO BID6 10mg|Felodipine_IR tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO BID6 10mg|Felodipine_IR tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO BID6 10mg|Felodipine_IR tablet|Application_10|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO BID6 10mg|Felodipine_IR tablet|Application_10|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO BID6 10mg|Felodipine_IR tablet|Application_11|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO BID6 10mg|Felodipine_IR tablet|Application_11|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO BID6 10mg|Felodipine_IR tablet|Application_12|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO BID6 10mg|Felodipine_IR tablet|Application_12|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO BID6 10mg|Felodipine_IR tablet|Application_2|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO BID6 10mg|Felodipine_IR tablet|Application_2|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO BID6 10mg|Felodipine_IR tablet|Application_3|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO BID6 10mg|Felodipine_IR tablet|Application_3|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO BID6 10mg|Felodipine_IR tablet|Application_4|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO BID6 10mg|Felodipine_IR tablet|Application_4|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO BID6 10mg|Felodipine_IR tablet|Application_5|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO BID6 10mg|Felodipine_IR tablet|Application_5|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO BID6 10mg|Felodipine_IR tablet|Application_6|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO BID6 10mg|Felodipine_IR tablet|Application_6|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO BID6 10mg|Felodipine_IR tablet|Application_7|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO BID6 10mg|Felodipine_IR tablet|Application_7|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO BID6 10mg|Felodipine_IR tablet|Application_8|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO BID6 10mg|Felodipine_IR tablet|Application_8|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO BID6 10mg|Felodipine_IR tablet|Application_9|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO BID6 10mg|Felodipine_IR tablet|Application_9|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -9572,6 +9745,23 @@
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "IR tablet BID 10mg_test|Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Blychert 1990 - Study I-10mg-PO IR tablet-market - Felodipine - PO - 10 mg - Plasma - agg. (n=18)"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "IR tablet BID 10mg_test|Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Blychert 1990 - Study I-10mg-PO IR tablet-trial - Felodipine - PO - 10 mg - Plasma - agg. (n=18)"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "IR tablet BID 10mg_test|Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Smith 1987 - 10mg-PO IR tablet - Felodipine - PO - 10 mg - Plasma - agg. (n=8)"
+        }
       ],
       "Individual": "European (P-gp modified, CYP3A4 36 h)",
       "Compounds": [
@@ -9753,72 +9943,72 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_IR tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_IR tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_IR tablet|Application_10|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_IR tablet|Application_10|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_IR tablet|Application_11|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_IR tablet|Application_11|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_IR tablet|Application_12|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_IR tablet|Application_12|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_IR tablet|Application_13|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_IR tablet|Application_13|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_IR tablet|Application_14|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_IR tablet|Application_14|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_IR tablet|Application_2|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_IR tablet|Application_2|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_IR tablet|Application_3|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_IR tablet|Application_3|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_IR tablet|Application_4|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_IR tablet|Application_4|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_IR tablet|Application_5|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_IR tablet|Application_5|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_IR tablet|Application_6|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_IR tablet|Application_6|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_IR tablet|Application_7|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_IR tablet|Application_7|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_IR tablet|Application_8|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_IR tablet|Application_8|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO OD14 10mg|Felodipine_IR tablet|Application_9|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO OD14 10mg|Felodipine_IR tablet|Application_9|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -10060,6 +10250,13 @@
       ],
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "IR tablet OD 10mg_test|Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Blychert 1990 - Study II-10mg-PO IR tablet-market - Felodipine - PO - 10 mg - Plasma - agg. (n=15)"
+        }
       ],
       "Individual": "European (P-gp modified, CYP3A4 36 h)",
       "Compounds": [
@@ -10223,77 +10420,77 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|PO TID5 5mg|Felodipine_IR tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO TID5 5mg|Felodipine_IR tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO TID5 5mg|Felodipine_IR tablet|Application_10|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO TID5 5mg|Felodipine_IR tablet|Application_10|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO TID5 5mg|Felodipine_IR tablet|Application_11|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO TID5 5mg|Felodipine_IR tablet|Application_11|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO TID5 5mg|Felodipine_IR tablet|Application_12|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO TID5 5mg|Felodipine_IR tablet|Application_12|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO TID5 5mg|Felodipine_IR tablet|Application_13|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO TID5 5mg|Felodipine_IR tablet|Application_13|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO TID5 5mg|Felodipine_IR tablet|Application_14|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO TID5 5mg|Felodipine_IR tablet|Application_14|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO TID5 5mg|Felodipine_IR tablet|Application_15|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO TID5 5mg|Felodipine_IR tablet|Application_15|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO TID5 5mg|Felodipine_IR tablet|Application_2|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO TID5 5mg|Felodipine_IR tablet|Application_2|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO TID5 5mg|Felodipine_IR tablet|Application_3|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO TID5 5mg|Felodipine_IR tablet|Application_3|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO TID5 5mg|Felodipine_IR tablet|Application_4|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO TID5 5mg|Felodipine_IR tablet|Application_4|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO TID5 5mg|Felodipine_IR tablet|Application_5|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO TID5 5mg|Felodipine_IR tablet|Application_5|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO TID5 5mg|Felodipine_IR tablet|Application_6|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO TID5 5mg|Felodipine_IR tablet|Application_6|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO TID5 5mg|Felodipine_IR tablet|Application_7|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO TID5 5mg|Felodipine_IR tablet|Application_7|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO TID5 5mg|Felodipine_IR tablet|Application_8|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO TID5 5mg|Felodipine_IR tablet|Application_8|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO TID5 5mg|Felodipine_IR tablet|Application_9|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO TID5 5mg|Felodipine_IR tablet|Application_9|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -10536,6 +10733,13 @@
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "IR tablet TID 5mg_test|Organism|PeripheralVenousBlood|Felodipine|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Bratel 1989 - 5mg-PO IR tablet - Felodipine - PO - 5 mg - Plasma - agg. (n=11)"
+        }
+      ],
       "Individual": "European (P-gp modified, CYP3A4 36 h)",
       "Compounds": [
         {
@@ -10659,31 +10863,38 @@
           "Properties": [
             {
               "Name": "ftol",
-              "Value": 0.001
+              "Value": 0.001,
+              "Type": "Double"
             },
             {
               "Name": "xtol",
-              "Value": 1E-06
+              "Value": 1E-06,
+              "Type": "Double"
             },
             {
               "Name": "gtol",
-              "Value": 1E-10
+              "Value": 1E-10,
+              "Type": "Double"
             },
             {
               "Name": "stepfactor",
-              "Value": 100.0
+              "Value": 100.0,
+              "Type": "Double"
             },
             {
               "Name": "maxiter",
-              "Value": 200
+              "Value": 200.0,
+              "Type": "Double"
             },
             {
               "Name": "maxfev",
-              "Value": 0
+              "Value": 0.0,
+              "Type": "Double"
             },
             {
               "Name": "epsfcn",
-              "Value": 1E-09
+              "Value": 1E-09,
+              "Type": "Double"
             }
           ]
         }
@@ -10705,8 +10916,8 @@
           "Name": "Dissolution shape",
           "Scaling": "Log",
           "LinkedParameters": [
-            "IR tablet 10mg|Applications|PO SD 10mg|Felodipine_IR tablet|Dissolution shape",
-            "IR tablet 5mg|Applications|PO SD 5mg|Felodipine_IR tablet|Dissolution shape"
+            "IR tablet 10mg|Events|PO SD 10mg|Felodipine_IR tablet|Dissolution shape",
+            "IR tablet 5mg|Events|PO SD 5mg|Felodipine_IR tablet|Dissolution shape"
           ],
           "Parameters": [
             {
@@ -10727,8 +10938,8 @@
           "Name": "Dissolution time (50% dissolved)",
           "Scaling": "Log",
           "LinkedParameters": [
-            "IR tablet 10mg|Applications|PO SD 10mg|Felodipine_IR tablet|Dissolution time (50% dissolved)",
-            "IR tablet 5mg|Applications|PO SD 5mg|Felodipine_IR tablet|Dissolution time (50% dissolved)"
+            "IR tablet 10mg|Events|PO SD 10mg|Felodipine_IR tablet|Dissolution time (50% dissolved)",
+            "IR tablet 5mg|Events|PO SD 5mg|Felodipine_IR tablet|Dissolution time (50% dissolved)"
           ],
           "Parameters": [
             {
@@ -10867,15 +11078,18 @@
           "Properties": [
             {
               "Name": "BreakCondition",
-              "Value": 0.001
+              "Value": 0.001,
+              "Type": "Double"
             },
             {
               "Name": "InitialAlpha",
-              "Value": 30.0
+              "Value": 30.0,
+              "Type": "Double"
             },
             {
               "Name": "MaxIterations",
-              "Value": 10000
+              "Value": 10000.0,
+              "Type": "Double"
             }
           ]
         }
@@ -11306,11 +11520,8 @@
           "Name": "Dissolution shape",
           "Scaling": "Log",
           "LinkedParameters": [
-            "ER tablet 10mg|Applications|PO SD 10mg|ER tablet|Dissolution shape",
-            "ER tablet 5mg|Applications|PO SD 5mg|ER tablet|Dissolution shape",
-            "Jalava_Treatment|Applications|Jalava_Treatment_Felodipine|Felodipine_ER tablet|Dissolution shape",
-            "ER tablet OD 10mg|Applications|PO OD14 10mg|ER tablet|Dissolution shape",
-            "Jalava_control|Applications|PO SD 5mg|Felodipine_ER tablet|Dissolution shape"
+            "Jalava_Treatment|Events|Jalava_Treatment_Felodipine|Felodipine_ER tablet|Dissolution shape",
+            "Jalava_control|Events|PO SD 5mg|Felodipine_ER tablet|Dissolution shape"
           ],
           "Parameters": [
             {
@@ -11331,11 +11542,8 @@
           "Name": "Dissolution time (50% dissolved)",
           "Scaling": "Log",
           "LinkedParameters": [
-            "ER tablet 10mg|Applications|PO SD 10mg|ER tablet|Dissolution time (50% dissolved)",
-            "ER tablet 5mg|Applications|PO SD 5mg|ER tablet|Dissolution time (50% dissolved)",
-            "Jalava_Treatment|Applications|Jalava_Treatment_Felodipine|Felodipine_ER tablet|Dissolution time (50% dissolved)",
-            "ER tablet OD 10mg|Applications|PO OD14 10mg|ER tablet|Dissolution time (50% dissolved)",
-            "Jalava_control|Applications|PO SD 5mg|Felodipine_ER tablet|Dissolution time (50% dissolved)"
+            "Jalava_Treatment|Events|Jalava_Treatment_Felodipine|Felodipine_ER tablet|Dissolution time (50% dissolved)",
+            "Jalava_control|Events|PO SD 5mg|Felodipine_ER tablet|Dissolution time (50% dissolved)"
           ],
           "Parameters": [
             {
@@ -11359,11 +11567,8 @@
           "Name": "Lag time",
           "Scaling": "Log",
           "LinkedParameters": [
-            "ER tablet 10mg|Applications|PO SD 10mg|ER tablet|Lag time",
-            "ER tablet 5mg|Applications|PO SD 5mg|ER tablet|Lag time",
-            "Jalava_Treatment|Applications|Jalava_Treatment_Felodipine|Felodipine_ER tablet|Lag time",
-            "ER tablet OD 10mg|Applications|PO OD14 10mg|ER tablet|Lag time",
-            "Jalava_control|Applications|PO SD 5mg|Felodipine_ER tablet|Lag time"
+            "Jalava_Treatment|Events|Jalava_Treatment_Felodipine|Felodipine_ER tablet|Lag time",
+            "Jalava_control|Events|PO SD 5mg|Felodipine_ER tablet|Lag time"
           ],
           "Parameters": [
             {
@@ -11387,24 +11592,8 @@
           "Name": "Tablet time delay factor",
           "Scaling": "Log",
           "LinkedParameters": [
-            "ER tablet 5mg|Applications|PO SD 5mg|ER tablet|Application_1|Tablet time delay factor",
-            "ER tablet 10mg|Applications|PO SD 10mg|ER tablet|Application_1|Tablet time delay factor",
-            "Jalava_Treatment|Applications|Jalava_Treatment_Felodipine|Felodipine_ER tablet|Application_1|Tablet time delay factor",
-            "ER tablet OD 10mg|Applications|PO OD14 10mg|ER tablet|Application_1|Tablet time delay factor",
-            "ER tablet OD 10mg|Applications|PO OD14 10mg|ER tablet|Application_2|Tablet time delay factor",
-            "ER tablet OD 10mg|Applications|PO OD14 10mg|ER tablet|Application_3|Tablet time delay factor",
-            "ER tablet OD 10mg|Applications|PO OD14 10mg|ER tablet|Application_4|Tablet time delay factor",
-            "ER tablet OD 10mg|Applications|PO OD14 10mg|ER tablet|Application_5|Tablet time delay factor",
-            "ER tablet OD 10mg|Applications|PO OD14 10mg|ER tablet|Application_6|Tablet time delay factor",
-            "ER tablet OD 10mg|Applications|PO OD14 10mg|ER tablet|Application_7|Tablet time delay factor",
-            "ER tablet OD 10mg|Applications|PO OD14 10mg|ER tablet|Application_8|Tablet time delay factor",
-            "ER tablet OD 10mg|Applications|PO OD14 10mg|ER tablet|Application_9|Tablet time delay factor",
-            "ER tablet OD 10mg|Applications|PO OD14 10mg|ER tablet|Application_10|Tablet time delay factor",
-            "ER tablet OD 10mg|Applications|PO OD14 10mg|ER tablet|Application_11|Tablet time delay factor",
-            "ER tablet OD 10mg|Applications|PO OD14 10mg|ER tablet|Application_12|Tablet time delay factor",
-            "ER tablet OD 10mg|Applications|PO OD14 10mg|ER tablet|Application_13|Tablet time delay factor",
-            "ER tablet OD 10mg|Applications|PO OD14 10mg|ER tablet|Application_14|Tablet time delay factor",
-            "Jalava_control|Applications|PO SD 5mg|Felodipine_ER tablet|Application_1|Tablet time delay factor"
+            "Jalava_Treatment|Events|Jalava_Treatment_Felodipine|Felodipine_ER tablet|Application_1|Tablet time delay factor",
+            "Jalava_control|Events|PO SD 5mg|Felodipine_ER tablet|Application_1|Tablet time delay factor"
           ],
           "Parameters": [
             {
@@ -11757,75 +11946,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16030.0
+          "Value": 16030.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Bratel 1989"
+          "Value": "Bratel 1989",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/2753066/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/2753066/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1"
+          "Value": "Fig. 1",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "5mg-PO IR tablet"
+          "Value": "5mg-PO IR tablet",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 11.0
+          "Value": 11.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Felodipine"
+          "Value": "Felodipine",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "5 mg"
+          "Value": "5 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": "(S0-T8-R5)"
+          "Value": "(S0-T8-R5)",
+          "Type": "String"
         },
         {
           "Name": "Formulation",
-          "Value": "IR tablet"
+          "Value": "IR tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fed"
+          "Value": "Fed",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "Arith. SEM converted to arith. SD"
+          "Value": "Arith. SEM converted to arith. SD",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -11911,75 +12118,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16029.0
+          "Value": 16029.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Edgar 1992"
+          "Value": "Edgar 1992",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/1577050/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/1577050/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1"
+          "Value": "Fig. 1",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "5mg-PO IR tablet"
+          "Value": "5mg-PO IR tablet",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 9.0
+          "Value": 9.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Felodipine"
+          "Value": "Felodipine",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "5 mg"
+          "Value": "5 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "IR tablet"
+          "Value": "IR tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "Arith. SEM converted to arith. SD"
+          "Value": "Arith. SEM converted to arith. SD",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -12068,75 +12293,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16028.0
+          "Value": 16028.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Goosen 2004"
+          "Value": "Goosen 2004",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/15592332/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/15592332/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 2"
+          "Value": "Fig. 2",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "5mg-PO ER tablet"
+          "Value": "5mg-PO ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 11.0
+          "Value": 11.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Felodipine"
+          "Value": "Felodipine",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "5 mg"
+          "Value": "5 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "ER tablet"
+          "Value": "ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "Arith. SEM converted to arith. SD"
+          "Value": "Arith. SEM converted to arith. SD",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -12234,75 +12477,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16027.0
+          "Value": 16027.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Bailey 1993"
+          "Value": "Bailey 1993",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/8513655/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/8513655/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1"
+          "Value": "Fig. 1",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "5mg-PO IR tablet"
+          "Value": "5mg-PO IR tablet",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 9.0
+          "Value": 9.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Felodipine"
+          "Value": "Felodipine",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "5 mg"
+          "Value": "5 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "IR tablet"
+          "Value": "IR tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "Arith. SEM converted to arith. SD"
+          "Value": "Arith. SEM converted to arith. SD",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -12390,75 +12651,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16026.0
+          "Value": 16026.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Dresser 2000"
+          "Value": "Dresser 2000",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/10945313/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/10945313/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1"
+          "Value": "Fig. 1",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "2.5mg,5mg-PO ER tablet"
+          "Value": "2.5mg,5mg-PO ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 6.0
+          "Value": 6.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Felodipine"
+          "Value": "Felodipine",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "2.5, 5 mg"
+          "Value": "2.5, 5 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": "2.5mg: S0-T24-R2, 5mg: S48-T24-R6"
+          "Value": "2.5mg: S0-T24-R2, 5mg: S48-T24-R6",
+          "Type": "String"
         },
         {
           "Name": "Formulation",
-          "Value": "ER tablet"
+          "Value": "ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "Arith. SEM converted to arith. SD"
+          "Value": "Arith. SEM converted to arith. SD",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -12552,75 +12831,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16025.0
+          "Value": 16025.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Dresser 2000"
+          "Value": "Dresser 2000",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/10945313/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/10945313/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1"
+          "Value": "Fig. 1",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "5mg-PO ER tablet"
+          "Value": "5mg-PO ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 12.0
+          "Value": 12.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Felodipine"
+          "Value": "Felodipine",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "5 mg"
+          "Value": "5 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "ER tablet"
+          "Value": "ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "Arith. SEM converted to arith. SD"
+          "Value": "Arith. SEM converted to arith. SD",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -12711,75 +13008,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16024.0
+          "Value": 16024.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Aberg 1997"
+          "Value": "Aberg 1997",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/9342583/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/9342583/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1"
+          "Value": "Fig. 1",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "10mg-PO ER tablet"
+          "Value": "10mg-PO ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 36.0
+          "Value": 36.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Felodipine"
+          "Value": "Felodipine",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "10 mg"
+          "Value": "10 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": "(S0-T24-R7)"
+          "Value": "(S0-T24-R7)",
+          "Type": "String"
         },
         {
           "Name": "Formulation",
-          "Value": "ER tablet"
+          "Value": "ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -12855,75 +13170,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16023.0
+          "Value": 16023.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Bailey 1995"
+          "Value": "Bailey 1995",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/8562295/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/8562295/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1"
+          "Value": "Fig. 1",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "10mg-PO ER tablet"
+          "Value": "10mg-PO ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 12.0
+          "Value": 12.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Felodipine"
+          "Value": "Felodipine",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "10 mg"
+          "Value": "10 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": "(S0-T24-R2)"
+          "Value": "(S0-T24-R2)",
+          "Type": "String"
         },
         {
           "Name": "Formulation",
-          "Value": "ER tablet"
+          "Value": "ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -13014,75 +13347,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16022.0
+          "Value": 16022.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Dresser 2017"
+          "Value": "Dresser 2017",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/28971609/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/28971609/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 2"
+          "Value": "Fig. 2",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "10mg-PO ER tablet"
+          "Value": "10mg-PO ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 5.0
+          "Value": 5.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Felodipine"
+          "Value": "Felodipine",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "10 mg"
+          "Value": "10 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "ER tablet"
+          "Value": "ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "Arith. SEM converted to arith. SD"
+          "Value": "Arith. SEM converted to arith. SD",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -13180,75 +13531,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16021.0
+          "Value": 16021.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Lundahl 1998"
+          "Value": "Lundahl 1998",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/9591935/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/9591935/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1"
+          "Value": "Fig. 1",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "10mg-PO ER tablet"
+          "Value": "10mg-PO ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 12.0
+          "Value": 12.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Felodipine"
+          "Value": "Felodipine",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "10 mg"
+          "Value": "10 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": "(S-0,T-24,R-14)"
+          "Value": "(S-0,T-24,R-14)",
+          "Type": "String"
         },
         {
           "Name": "Formulation",
-          "Value": "ER tablet"
+          "Value": "ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -13356,75 +13725,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16020.0
+          "Value": 16020.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Madsen 1996"
+          "Value": "Madsen 1996",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/8737760/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/8737760/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 2"
+          "Value": "Fig. 2",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "10mg-PO ER tablet"
+          "Value": "10mg-PO ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 12.0
+          "Value": 12.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Felodipine"
+          "Value": "Felodipine",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "10 mg"
+          "Value": "10 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "ER tablet"
+          "Value": "ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -13491,75 +13878,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16019.0
+          "Value": 16019.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Smith 1987"
+          "Value": "Smith 1987",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/3830242/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/3830242/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1"
+          "Value": "Fig. 1",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "10mg-PO IR tablet"
+          "Value": "10mg-PO IR tablet",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 8.0
+          "Value": 8.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Felodipine"
+          "Value": "Felodipine",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "10 mg"
+          "Value": "10 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": "(S0-T12-R5)"
+          "Value": "(S0-T12-R5)",
+          "Type": "String"
         },
         {
           "Name": "Formulation",
-          "Value": "IR tablet"
+          "Value": "IR tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -13647,75 +14052,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16018.0
+          "Value": 16018.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Dresser 2002"
+          "Value": "Dresser 2002",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/12235445/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/12235445/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 2"
+          "Value": "Fig. 2",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "10mg-PO ER tablet"
+          "Value": "10mg-PO ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 11.0
+          "Value": 11.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Felodipine"
+          "Value": "Felodipine",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "10 mg"
+          "Value": "10 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "ER tablet"
+          "Value": "ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "Arith. SEM converted to arith. SD"
+          "Value": "Arith. SEM converted to arith. SD",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -13804,75 +14227,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16017.0
+          "Value": 16017.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Guo 2007"
+          "Value": "Guo 2007",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/17691921/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/17691921/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 2"
+          "Value": "Fig. 2",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "10mg-PO ER tablet"
+          "Value": "10mg-PO ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 12.0
+          "Value": 12.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Felodipine"
+          "Value": "Felodipine",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "10 mg"
+          "Value": "10 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "ER tablet"
+          "Value": "ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "Arith. SEM converted to arith. SD"
+          "Value": "Arith. SEM converted to arith. SD",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -13960,75 +14401,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16016.0
+          "Value": 16016.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Bailey 1998"
+          "Value": "Bailey 1998",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/9757148/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/9757148/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1"
+          "Value": "Fig. 1",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "10mg-PO ER tablet"
+          "Value": "10mg-PO ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 12.0
+          "Value": 12.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Felodipine"
+          "Value": "Felodipine",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "10 mg"
+          "Value": "10 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "ER tablet"
+          "Value": "ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "Arith. SEM converted to arith. SD"
+          "Value": "Arith. SEM converted to arith. SD",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -14123,75 +14582,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16015.0
+          "Value": 16015.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Bailey 2000"
+          "Value": "Bailey 2000",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/11103749/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/11103749/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1"
+          "Value": "Fig. 1",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "10mg-PO ER tablet"
+          "Value": "10mg-PO ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 12.0
+          "Value": 12.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Felodipine"
+          "Value": "Felodipine",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "10 mg"
+          "Value": "10 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "ER tablet"
+          "Value": "ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "Arith. SEM converted to arith. SD"
+          "Value": "Arith. SEM converted to arith. SD",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -14280,75 +14757,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16014.0
+          "Value": 16014.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Bailey 2003"
+          "Value": "Bailey 2003",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/12811362/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/12811362/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 2"
+          "Value": "Fig. 2",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "10mg-PO ER tablet"
+          "Value": "10mg-PO ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 8.0
+          "Value": 8.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Felodipine"
+          "Value": "Felodipine",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "10 mg"
+          "Value": "10 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "ER tablet"
+          "Value": "ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "Arith. SEM converted to arith. SD"
+          "Value": "Arith. SEM converted to arith. SD",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -14437,75 +14932,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16013.0
+          "Value": 16013.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Gelal 2005"
+          "Value": "Gelal 2005",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/15592925/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/15592925/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1"
+          "Value": "Fig. 1",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "10mg-PO ER tablet"
+          "Value": "10mg-PO ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 10.0
+          "Value": 10.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Felodipine"
+          "Value": "Felodipine",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "10 mg"
+          "Value": "10 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "ER tablet"
+          "Value": "ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -14574,75 +15087,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16012.0
+          "Value": 16012.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Blychert 1990"
+          "Value": "Blychert 1990",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/2404502/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/2404502/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 2"
+          "Value": "Fig. 2",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "Study II-10mg-PO ER tablet-market"
+          "Value": "Study II-10mg-PO ER tablet-market",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 15.0
+          "Value": 15.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Felodipine"
+          "Value": "Felodipine",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "10 mg"
+          "Value": "10 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": "(S0-T24-R6)"
+          "Value": "(S0-T24-R6)",
+          "Type": "String"
         },
         {
           "Name": "Formulation",
-          "Value": "ER tablet"
+          "Value": "ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -14705,75 +15236,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16011.0
+          "Value": 16011.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Blychert 1990"
+          "Value": "Blychert 1990",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/2404502/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/2404502/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 2"
+          "Value": "Fig. 2",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "Study II-10mg-PO ER tablet-trial"
+          "Value": "Study II-10mg-PO ER tablet-trial",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 15.0
+          "Value": 15.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Felodipine"
+          "Value": "Felodipine",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "10 mg"
+          "Value": "10 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": "(S0-T24-R6)"
+          "Value": "(S0-T24-R6)",
+          "Type": "String"
         },
         {
           "Name": "Formulation",
-          "Value": "ER tablet"
+          "Value": "ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -14838,75 +15387,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16010.0
+          "Value": 16010.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Blychert 1990"
+          "Value": "Blychert 1990",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/2404502/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/2404502/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 2"
+          "Value": "Fig. 2",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "Study II-10mg-PO IR tablet-market"
+          "Value": "Study II-10mg-PO IR tablet-market",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 15.0
+          "Value": 15.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Felodipine"
+          "Value": "Felodipine",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "10 mg"
+          "Value": "10 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": "(S0-T24-R6)"
+          "Value": "(S0-T24-R6)",
+          "Type": "String"
         },
         {
           "Name": "Formulation",
-          "Value": "IR tablet"
+          "Value": "IR tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "Arith. SEM converted to arith. SD"
+          "Value": "Arith. SEM converted to arith. SD",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -15006,75 +15573,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16009.0
+          "Value": 16009.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Blychert 1990"
+          "Value": "Blychert 1990",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/2404502/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/2404502/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1"
+          "Value": "Fig. 1",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "Study I-10mg-PO IR tablet-market"
+          "Value": "Study I-10mg-PO IR tablet-market",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 18.0
+          "Value": 18.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Felodipine"
+          "Value": "Felodipine",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "10 mg"
+          "Value": "10 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": "(S0-T12-R6)"
+          "Value": "(S0-T12-R6)",
+          "Type": "String"
         },
         {
           "Name": "Formulation",
-          "Value": "IR tablet"
+          "Value": "IR tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "Arith. SEM converted to arith. SD"
+          "Value": "Arith. SEM converted to arith. SD",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -15174,75 +15759,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16008.0
+          "Value": 16008.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Blychert 1990"
+          "Value": "Blychert 1990",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/2404502/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/2404502/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1"
+          "Value": "Fig. 1",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "Study I-10mg-PO IR tablet-trial"
+          "Value": "Study I-10mg-PO IR tablet-trial",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 18.0
+          "Value": 18.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Felodipine"
+          "Value": "Felodipine",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "10 mg"
+          "Value": "10 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": "(S0-T12-R6)"
+          "Value": "(S0-T12-R6)",
+          "Type": "String"
         },
         {
           "Name": "Formulation",
-          "Value": "IR tablet"
+          "Value": "IR tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "Arith. SEM converted to arith. SD"
+          "Value": "Arith. SEM converted to arith. SD",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -15342,75 +15945,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16007.0
+          "Value": 16007.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Blychert 1990"
+          "Value": "Blychert 1990",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/2404502/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/2404502/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1"
+          "Value": "Fig. 1",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "Study I-10mg-PO solution"
+          "Value": "Study I-10mg-PO solution",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 18.0
+          "Value": 18.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Felodipine"
+          "Value": "Felodipine",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "10 mg"
+          "Value": "10 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": "(S0-T12-R6)"
+          "Value": "(S0-T12-R6)",
+          "Type": "String"
         },
         {
           "Name": "Formulation",
-          "Value": "Solution"
+          "Value": "Solution",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "Arith. SEM converted to arith. SD"
+          "Value": "Arith. SEM converted to arith. SD",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -15510,75 +16131,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16006.0
+          "Value": 16006.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Jalava 1997"
+          "Value": "Jalava 1997",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/9129558/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/9129558/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1"
+          "Value": "Fig. 1",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "5mg-PO ER tablet"
+          "Value": "5mg-PO ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 9.0
+          "Value": 9.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Felodipine"
+          "Value": "Felodipine",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "5 mg"
+          "Value": "5 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "ER tablet"
+          "Value": "ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -15641,75 +16280,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16005.0
+          "Value": 16005.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Bailey 1996"
+          "Value": "Bailey 1996",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/8689808/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/8689808/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 2"
+          "Value": "Fig. 2",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "10mg-PO ER tablet"
+          "Value": "10mg-PO ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 12.0
+          "Value": 12.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Felodipine"
+          "Value": "Felodipine",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "10 mg"
+          "Value": "10 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "ER tablet"
+          "Value": "ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "Arith. SEM converted to arith. SD"
+          "Value": "Arith. SEM converted to arith. SD",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -15801,75 +16458,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16004.0
+          "Value": 16004.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Edgar 1987"
+          "Value": "Edgar 1987",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/3327676/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/3327676/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 2"
+          "Value": "Fig. 2",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "10mg-PO ER tablet"
+          "Value": "10mg-PO ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 12.0
+          "Value": 12.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Felodipine"
+          "Value": "Felodipine",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "10 mg"
+          "Value": "10 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "ER tablet"
+          "Value": "ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -15932,75 +16607,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16003.0
+          "Value": 16003.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Edgar 1987"
+          "Value": "Edgar 1987",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/3327676/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/3327676/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 2"
+          "Value": "Fig. 2",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "10mg-PO IR tablet"
+          "Value": "10mg-PO IR tablet",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 12.0
+          "Value": 12.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Felodipine"
+          "Value": "Felodipine",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "10 mg"
+          "Value": "10 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "IR tablet"
+          "Value": "IR tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -16069,75 +16762,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16002.0
+          "Value": 16002.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Edgar 1987"
+          "Value": "Edgar 1987",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/3327676/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/3327676/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 2"
+          "Value": "Fig. 2",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "10mg-PO solution"
+          "Value": "10mg-PO solution",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 12.0
+          "Value": 12.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Felodipine"
+          "Value": "Felodipine",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "10 mg"
+          "Value": "10 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Solution"
+          "Value": "Solution",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -16202,75 +16913,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16001.0
+          "Value": 16001.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Lundahl 1997"
+          "Value": "Lundahl 1997",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/9174684/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/9174684/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1"
+          "Value": "Fig. 1",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "1.5mg-IV infusion"
+          "Value": "1.5mg-IV infusion",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 12.0
+          "Value": 12.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Felodipine"
+          "Value": "Felodipine",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "IV"
+          "Value": "IV",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "1.5 mg"
+          "Value": "1.5 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Infusion"
+          "Value": "Infusion",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -16352,75 +17081,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16000.0
+          "Value": 16000.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Lundahl 1997"
+          "Value": "Lundahl 1997",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/9174684/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/9174684/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1"
+          "Value": "Fig. 1",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "10mg-PO ER tablet"
+          "Value": "10mg-PO ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 12.0
+          "Value": 12.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Felodipine"
+          "Value": "Felodipine",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "10 mg"
+          "Value": "10 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "ER tablet"
+          "Value": "ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -16490,75 +17237,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16064.0
+          "Value": 16064.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Jalava 1997"
+          "Value": "Jalava 1997",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/9129558/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/9129558/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1"
+          "Value": "Fig. 1",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "200mg-PO-DDI"
+          "Value": "200mg-PO-DDI",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 9.0
+          "Value": 9.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Itraconazole"
+          "Value": "Itraconazole",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "200 mg"
+          "Value": "200 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": "(S0-T24-R4)"
+          "Value": "(S0-T24-R4)",
+          "Type": "String"
         },
         {
           "Name": "Formulation",
-          "Value": "Sporanox"
+          "Value": "Sporanox",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "Arith. SEM converted to arith. SD"
+          "Value": "Arith. SEM converted to arith. SD",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -16637,75 +17402,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16063.0
+          "Value": 16063.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Jalava 1997"
+          "Value": "Jalava 1997",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/9129558/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/9129558/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1"
+          "Value": "Fig. 1",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "Itraconazole DDI, treatment group"
+          "Value": "Itraconazole DDI, treatment group",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 9.0
+          "Value": 9.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Felodipine"
+          "Value": "Felodipine",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "5 mg"
+          "Value": "5 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 73.0
+          "Value": 73.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "ER tablet"
+          "Value": "ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "Arith. SEM converted to arith. SD"
+          "Value": "Arith. SEM converted to arith. SD",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -16796,75 +17579,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16062.0
+          "Value": 16062.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Bailey 1996"
+          "Value": "Bailey 1996",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/8689808/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/8689808/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 2"
+          "Value": "Fig. 2",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "Erythromycin DDI, treatment group"
+          "Value": "Erythromycin DDI, treatment group",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 12.0
+          "Value": 12.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Felodipine"
+          "Value": "Felodipine",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "10 mg"
+          "Value": "10 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 24.0
+          "Value": 24.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "ER tablet"
+          "Value": "ER tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "Arith. SEM converted to arith. SD"
+          "Value": "Arith. SEM converted to arith. SD",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -16956,16 +17757,16 @@
     {
       "Name": "Lundahl 1997",
       "Classifiables": [
-        "Lundahl 1997 - 10mg-PO ER tablet - Felodipine - PO - 10 mg - Plasma - agg. (n=12)",
-        "Lundahl 1997 - 1.5mg-IV infusion - Felodipine - IV - 1.5 mg - Plasma - agg. (n=12)"
+        "Lundahl 1997 - 1.5mg-IV infusion - Felodipine - IV - 1.5 mg - Plasma - agg. (n=12)",
+        "Lundahl 1997 - 10mg-PO ER tablet - Felodipine - PO - 10 mg - Plasma - agg. (n=12)"
       ]
     },
     {
       "Name": "Edgar 1987",
       "Classifiables": [
-        "Edgar 1987 - 10mg-PO solution - Felodipine - PO - 10 mg - Plasma - agg. (n=12)",
+        "Edgar 1987 - 10mg-PO ER tablet - Felodipine - PO - 10 mg - Plasma - agg. (n=12)",
         "Edgar 1987 - 10mg-PO IR tablet - Felodipine - PO - 10 mg - Plasma - agg. (n=12)",
-        "Edgar 1987 - 10mg-PO ER tablet - Felodipine - PO - 10 mg - Plasma - agg. (n=12)"
+        "Edgar 1987 - 10mg-PO solution - Felodipine - PO - 10 mg - Plasma - agg. (n=12)"
       ]
     },
     {
@@ -16986,12 +17787,12 @@
     {
       "Name": "Blychert 1990",
       "Classifiables": [
-        "Blychert 1990 - Study I-10mg-PO solution - Felodipine - PO - 10 mg - Plasma - agg. (n=18)",
-        "Blychert 1990 - Study I-10mg-PO IR tablet-trial - Felodipine - PO - 10 mg - Plasma - agg. (n=18)",
-        "Blychert 1990 - Study I-10mg-PO IR tablet-market - Felodipine - PO - 10 mg - Plasma - agg. (n=18)",
-        "Blychert 1990 - Study II-10mg-PO IR tablet-market - Felodipine - PO - 10 mg - Plasma - agg. (n=15)",
+        "Blychert 1990 - Study II-10mg-PO ER tablet-market - Felodipine - PO - 10 mg - Plasma - agg. (n=15)",
         "Blychert 1990 - Study II-10mg-PO ER tablet-trial - Felodipine - PO - 10 mg - Plasma - agg. (n=15)",
-        "Blychert 1990 - Study II-10mg-PO ER tablet-market - Felodipine - PO - 10 mg - Plasma - agg. (n=15)"
+        "Blychert 1990 - Study II-10mg-PO IR tablet-market - Felodipine - PO - 10 mg - Plasma - agg. (n=15)",
+        "Blychert 1990 - Study I-10mg-PO IR tablet-market - Felodipine - PO - 10 mg - Plasma - agg. (n=18)",
+        "Blychert 1990 - Study I-10mg-PO IR tablet-trial - Felodipine - PO - 10 mg - Plasma - agg. (n=18)",
+        "Blychert 1990 - Study I-10mg-PO solution - Felodipine - PO - 10 mg - Plasma - agg. (n=18)"
       ]
     },
     {
@@ -17069,8 +17870,8 @@
     {
       "Name": "Dresser 2000",
       "Classifiables": [
-        "Dresser 2000 - 5mg-PO ER tablet - Felodipine - PO - 5 mg - Plasma - agg. (n=12)",
-        "Dresser 2000 - 2.5mg,5mg-PO ER tablet - Felodipine - PO - 2.5, 5 mg - Plasma - agg. (n=6)"
+        "Dresser 2000 - 2.5mg,5mg-PO ER tablet - Felodipine - PO - 2.5, 5 mg - Plasma - agg. (n=6)",
+        "Dresser 2000 - 5mg-PO ER tablet - Felodipine - PO - 5 mg - Plasma - agg. (n=12)"
       ]
     },
     {
