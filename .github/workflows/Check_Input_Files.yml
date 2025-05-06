@@ -1,7 +1,11 @@
 name: Check input files for validity
 
-on: 
-  [push, pull_request]
+on:
+  pull_request:
+  push:
+    branches-ignore:
+      - master
+      - main
 
 permissions:
   contents: read

@@ -1,6 +1,11 @@
 name: Check links and cross-references in markdown report
 
-on: [push]
+on:
+  pull_request:
+  push:
+    branches-ignore:
+      - master
+      - main
 
 permissions:
   contents: read
